@@ -8,3 +8,14 @@
 
 
 # *** your code here ***
+
+def single_one(arr):
+    my_arr = arr.sort()
+
+    while (arr[len(arr) - 1] == arr[len(arr) - 2]):
+        arr.pop()
+        arr.pop()
+
+    print("The number is", arr[len(arr)-1])
+
+single_one([1,1,2,2,3,3,4,5,5,6,6,7,7])

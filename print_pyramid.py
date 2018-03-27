@@ -26,3 +26,12 @@
 
 
 # *** your code here ***
+
+def pyramidder(num):
+    counter = 1
+    while counter <= num:
+        print(" " * (num - counter) + "#" * counter, "#" * counter + " " * (num - counter))
+        counter += 1
+
+pyramidder(1)
+pyramidder(9)

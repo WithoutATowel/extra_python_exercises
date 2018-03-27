@@ -34,5 +34,23 @@
 
 # This will assign the typed input value to your variable as a number
 
-
 # *** your code here ***
+
+def guessing_game():
+    answer = '17'
+    guess = input("What number am I thinking of? It's between 1-100.")
+    guesses = 1
+    if guess == answer:
+        print("That's right,", answer, "is the correct answer! That took you 1 guess.")
+    else:
+        while guess != answer:
+            guesses += 1
+            if guess > answer:
+                guess = input("The number is lower than " + guess + ". Guess again:")
+            else:
+                guess = input("The number is higher than " + guess + ". Guess again:")
+        print("That's right,", answer, "is the correct answer! That took you", str(guesses), "guesses.")
+
+
+guessing_game()
+

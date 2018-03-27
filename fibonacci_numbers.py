@@ -12,3 +12,12 @@
 
 
 # *** your code here ***
+
+def fibonacci(num):
+    list = [0, 1]
+    while len(list) < num:
+        currLen = len(list)
+        list.append(list[currLen - 1] + list[currLen - 2])
+    return list
+
+print(fibonacci(10))
